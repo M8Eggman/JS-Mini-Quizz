@@ -1,19 +1,37 @@
-let questions = {
-    'Quel est le personnage principal de "Naruto" ?': 'Naruto Uzumaki',
-    'Quel est le nom du robot géant dans "Neon Genesis Evangelion ?': 'Evangelion',
-    'Qui est le créateur de "One Piece" ?': 'Eiichiro Oda',
-    'Quel est le nom du chat magique dans "Sailor Moon" ?': 'Luna',
-    'Quel est le sport pratiqué dans "Haikyuu!!" ?': 'Volley-ball',
-    'Quel est le nom du héros de "My Hero Academia" ?': 'Izuku Midoriya',
-    'Qui est le rival de Light Yagami dans "Death Note" ?': 'L',
-    'Quel est le nom du héros de "Attack on Titan" ?': 'Eren Yeager',
-    'Quel est le nom du personnage principal de "Demon Slayer" ?': 'Tanjiro Kamado',
-    "Quel est l'anime qui suit les aventures d'un alchimiste ?": 'Fullmetal Alchemist',
-    'Quel est le nom du héros de "Dragon Ball Z" ?': 'Son Goku',
-    'Quel est le nom du personnage principal de "Tokyo Revengers" ?': 'Takemichi Hanagaki',
-    "Quel est l'anime qui met en scène des joueurs de basket-ball ?": 'Kuruko no Basket',
-    'Quel est le nom du personnage principal de "Cowboy Bebop" ?': 'Spike Spiegel'
-} 
+let questions = [
+    'Quel est le personnage principal de "Naruto" ?',
+    'Quel est le nom du robot géant dans "Neon Genesis Evangelion" ?',
+    'Qui est le créateur de "One Piece" ?',
+    'Quel est le nom du chat magique dans "Sailor Moon" ?',
+    'Quel est le sport pratiqué dans "Haikyuu!!" ?',
+    'Quel est le nom du héros de "My Hero Academia" ?',
+    'Qui est le rival de Light Yagami dans "Death Note" ?',
+    'Quel est le nom du héros de "Attack on Titan" ?',
+    'Quel est le nom du personnage principal de "Demon Slayer" ?',
+    "Quel est l'anime qui suit les aventures d'un alchimiste ?",
+    'Quel est le nom du héros de "Dragon Ball Z" ?',
+    'Quel est le nom du personnage principal de "Tokyo Revengers" ?',
+    "Quel est l'anime qui met en scène des joueurs de basket-ball ?",
+    'Quel est le nom du personnage principal de "Cowboy Bebop" ?'
+]
+let reponses = [
+    'Naruto Uzumaki',
+    'Evangelion',
+    'Eiichiro Oda',
+    'Luna',
+    'Volley-ball',
+    'Izuku Midoriya',
+    'L',
+    'Eren Yeager',
+    'Tanjiro Kamado',
+    'Fullmetal Alchemist',
+    'Son Goku',
+    'Takemichi Hanagaki',
+    'Kuruko no Basket',
+    'Spike Spiegel'
+]
+console.log(Object.keys(questions))
+
 let nombreQuestion = 5
 
 console.log("Bienvenu dans le quizz sur les animes")
