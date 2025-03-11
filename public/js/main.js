@@ -42,6 +42,7 @@ while (true) {
     let option = prompt()
     if (option === "1") {
         let bonneRéponse = 0
+        let listeBonneRéponse = []
         //source du nombre aléatoire: https://www.w3schools.com/js/js_random.asp     
         let question = Math.floor(Math.random() * questions.length)
         for ( index = 0; index < nombreQuestion; index++) {
@@ -51,10 +52,17 @@ while (true) {
             if (réponseUtilisateur.toLowerCase() == réponses[question].toLowerCase()) {
                 console.log("Bonne réponse")
                 bonneRéponse += 1
+                listeBonneRéponse.push(question)
+                console.log(listeBonneRéponse)
             } else {
                 console.log("Mauvaise réponse. La réponse était:", réponses[question])
+                listeBonneRéponse.push(question)
+                console.log(listeBonneRéponse)
             }
-            question = Math.floor(Math.random() * questions.length)
+            //choisir un nombre aléatoire différent jusqu'a qu'il soit différent de ce déjà géneré
+            do {
+                question = Math.floor(Math.random() * questions.length)  
+            } while (listeBonneRéponse.includes(question))
         }   
         console.log('Vous avez', bonneRéponse, "bonne réponse sur", nombreQuestion) 
     } else if (option === "2") {
