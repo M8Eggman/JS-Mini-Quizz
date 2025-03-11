@@ -14,7 +14,7 @@ let questions = [
     "Quel est l'anime qui met en scène des joueurs de basket-ball ?",
     'Quel est le nom du personnage principal de "Cowboy Bebop" ?'
 ]
-let reponses = [
+let réponses = [
     'Naruto Uzumaki',
     'Evangelion',
     'Eiichiro Oda',
@@ -30,7 +30,6 @@ let reponses = [
     'Kuruko no Basket',
     'Spike Spiegel'
 ]
-console.log(Object.keys(questions))
 
 let nombreQuestion = 5
 
@@ -42,7 +41,22 @@ while (true) {
     console.log("3.Quitter")
     let option = prompt()
     if (option === "1") {
-
+        let bonneRéponse = 0
+        //source du nombre aléatoire: https://www.w3schools.com/js/js_random.asp     
+        let question = Math.floor(Math.random() * questions.length)
+        for ( index = 0; index < nombreQuestion; index++) {
+            console.log("Question", index + 1,)
+            console.log(questions[question])
+            let réponseUtilisateur = prompt()
+            if (réponseUtilisateur.toLowerCase() == réponses[question].toLowerCase()) {
+                console.log("Bonne réponse")
+                bonneRéponse += 1
+            } else {
+                console.log("Mauvaise réponse. La réponse était:", réponses[question])
+            }
+            question = Math.floor(Math.random() * questions.length)
+        }   
+        console.log('Vous avez', bonneRéponse, "bonne réponse sur", nombreQuestion) 
     } else if (option === "2") {
         do {
             console.log("Entrer un nombre entre 2 et 10")
