@@ -53,11 +53,9 @@ while (true) {
                 console.log("Bonne réponse")
                 bonneRéponse += 1
                 listeBonneRéponse.push(question)
-                console.log(listeBonneRéponse)
             } else {
                 console.log("Mauvaise réponse. La réponse était:", réponses[question])
                 listeBonneRéponse.push(question)
-                console.log(listeBonneRéponse)
             }
             //choisir un nombre aléatoire différent jusqu'a qu'il soit différent de ce déjà géneré
             do {
