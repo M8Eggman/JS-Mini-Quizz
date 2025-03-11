@@ -9,12 +9,13 @@ while (true) {
     } else if (option === "2") {
         do {
             console.log("Entrer un nombre entre 2 et 20")
-            nombreQuestion = prompt()
+            var nombreQuestion = prompt()
         } while (nombreQuestion > 20 || nombreQuestion < 2)
         console.log("Le nombre de question a bien été changé en", nombreQuestion, "questions")
     } else if (option === "3") {
+        console.log("Au revoir")
         break
     } else {
-
+        console.log("Ce n'est pas une option valide, tapez un nombre entre 1 et 3")
     }
 }
