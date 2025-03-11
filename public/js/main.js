@@ -33,7 +33,7 @@ let réponses = [
 
 let nombreQuestion = 5
 
-console.log("Bienvenu dans le quizz sur les animes")
+console.log("Bienvenue dans le quizz sur les animes")
 while (true) {
     console.log("Nombre de question:", nombreQuestion)
     console.log("1.Lancer une partie")
